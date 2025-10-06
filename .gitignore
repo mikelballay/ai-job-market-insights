@@ -1,0 +1,34 @@
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+.env
+.ipynb_checkpoints/
+
+# Data & models
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+models/*
+!models/.gitkeep
+reports/*
+!reports/.gitkeep
+
+# OS / IDE
+.DS_Store
+*.swp
+.vscode/
+.idea/
+
+# Build / docker
+dist/
+build/
+*.log
+.coverage
+htmlcov/
+.cache/
