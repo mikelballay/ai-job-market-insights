@@ -1,7 +1,0 @@
-
-features:
-	python -m src.preprocessing.clean_text --in data/processed/jobs_features.parquet --out data/processed/jobs_clean.parquet
-	python -m src.preprocessing.extract_skills --in data/processed/jobs_clean.parquet --out data/processed/jobs_features_skills.parquet
-
-train:
-	python -m src.analysis.train_role_classifier --in data/processed/jobs_clean.parquet --out-model models/role_clf.pkl --out-report reports/role_clf_report.txt --out-cm reports/role_clf_cm.png
