@@ -89,9 +89,3 @@ Mikel [@mikelballay]
 🎓 Data Science & Machine Learning Student — Universidad Carlos III de Madrid & University of Florida
 📫 LinkedIn · GitHub
 
-##🏁 Next Steps
-Add salary prediction models (regression task).
-
-Integrate semantic embeddings (Sentence-BERT) to enhance text understanding.
-
-Deploy dashboard online via Streamlit Cloud or Hugging Face Spaces.
