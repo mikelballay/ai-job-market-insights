@@ -104,17 +104,5 @@ Notas:
 - Documenta ética/TOS en README.
 - Objetivo: ≥ 1.500 ofertas crudas esta semana.
 
----
 
-## 🔄 Publicar en GitHub
 
-```bash
-git init
-git add .
-git commit -m "feat: fase 1 lista (scraping mvp + dataset + dashboard)"
-git branch -M main
-git remote add origin <URL_DE_TU_REPO>
-git push -u origin main
-```
-
-Recuerda que `.gitignore` ya excluye datos/modelos/reportes reales; se mantienen las carpetas con `.gitkeep`.
