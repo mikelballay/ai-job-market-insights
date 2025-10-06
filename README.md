@@ -46,14 +46,14 @@ python -m venv .venv
 pip install -r requirements.txt
 2️⃣ Collect real job data
 
-Copiar código
+
 python -m src.scraping.collect_jobs --query "machine learning" --out data/raw/remotive_ml.jsonl --source remotive --limit 100
 python -m src.scraping.collect_jobs --query "data scientist" --out data/raw/remotive_ds.jsonl --source remotive --limit 100
 python -m src.scraping.collect_jobs --query "mlops" --out data/raw/remotive_mlops.jsonl --source remotive --limit 100
 python -m src.scraping.collect_jobs --query "quant" --out data/raw/remotive_quant.jsonl --source remotive --limit 100
 3️⃣ Merge and build dataset
 
-Copiar código
+
 python -m src.preprocessing.merge_jsonl --in data/raw/remotive_*.jsonl --out data/raw/remotive_merged.jsonl
 python -m src.preprocessing.build_dataset --in data/raw/remotive_merged.jsonl --out data/processed/jobs_remotive.parquet
 python -m src.preprocessing.extract_skills --in data/processed/jobs_remotive.parquet --out data/processed/jobs_remotive_features.parquet
